@@ -7,7 +7,11 @@ require_dependency "file_helper"
 module FileStore
 
   class S3Store < BaseStore
-    TOMBSTONE_PREFIX ||= "tombstone/"
+    if !Rails.configuration.multisite
+      TOMBSTONE_PREFIX ||= "tombstone/"
+    else
+      TOMBSTONE_PREFIX ||= multisite_upload_path
+    end
 
     attr_reader :s3_helper
 
