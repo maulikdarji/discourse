@@ -831,7 +831,7 @@ en:
         instructions: "Background images will be centered and have a default width of 590px."
 
       email:
-        title: "Email"
+        title: "Company/ Consultant Email"
         primary: "Primary Email"
         secondary: "Secondary Emails"
         no_secondary: "No secondary emails"
@@ -857,7 +857,7 @@ en:
         too_short: "Your name is too short"
         ok: "Your name looks good"
       username:
-        title: "Username"
+        title: "Company/ Consultant name"
         instructions: "unique, no spaces, short"
         short_instructions: "People can mention you as @{{username}}"
         available: "Your username is available"
@@ -1206,7 +1206,7 @@ en:
 
     login:
       title: "Log In"
-      username: "User"
+      username: "Company/ Consultant name"
       password: "Password"
       second_factor_title: "Two Factor Authentication"
       second_factor_description: "Please enter the authentication code from your app:"

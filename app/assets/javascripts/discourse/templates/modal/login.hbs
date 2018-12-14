@@ -6,7 +6,7 @@
         <div id="credentials" class={{credentialsClass}}>
           <table>
             <tr>
-              <td><label for='login-account-name'>{{i18n 'login.username'}}</label></td>
+              <td><label for='login-account-name'>Company/ Consultant name</label></td>
               <td>{{text-field value=loginName placeholderKey="login.email_placeholder" id="login-account-name" autocorrect="off" autocapitalize="off" autofocus="autofocus" disabled=showSecondFactor}}</td>
             </tr>
             <tr>
@@ -26,13 +26,13 @@
         {{/second-factor-form}}
       </form>
     {{/if}}
-    {{#if showLoginButtons}}
+    {{!-- {{#if showLoginButtons}}
       {{login-buttons
         showLoginWithEmailLink=showLoginWithEmailLink
         processingEmailLink=processingEmailLink
         emailLogin='emailLogin'
         externalLogin='externalLogin'}}
-    {{/if}}
+    {{/if}} --}}
   {{/d-modal-body}}
 
   <div class="modal-footer">

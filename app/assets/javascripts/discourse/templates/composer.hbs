@@ -16,9 +16,12 @@
             <div class='reply-to'>
               {{#unless model.viewFullscreen}}
                 <div class="reply-details">
-                  {{composer-action-title model=model canWhisper=canWhisper tabindex=8}}
-                  {{plugin-outlet name="composer-action-after" noTags=true args=(hash model=model)}}
+                  {{!-- {{composer-action-title model=model canWhisper=canWhisper tabindex=8}}
+                  {{plugin-outlet name="composer-action-after" noTags=true args=(hash model=model)}} --}}
 
+      <div>
+               <h3><lable>Raise your Querry/Concern/ Consulting Requirement</lable></h3>
+       </div> 
                   {{#unless site.mobileView}}
                     {{#if model.whisper}}
                       <span class='whisper'>{{d-icon 'eye-slash'}}</span>

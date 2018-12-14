@@ -1,4 +1,4 @@
-{{#if categories}}
+{{!-- {{#if categories}}
   <table class="category-list {{if showTopics 'with-topics'}}">
     <thead>
       <tr>
@@ -46,4 +46,35 @@
       {{/each}}
     </tbody>
   </table>
+{{/if}} --}}
+{{!-- Add Grid --}}
+<style>
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+ background-color: skyblue;
+  padding: 10px;
+}
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 13px;
+  
+}
+@media screen and (max-width: 600px){
+  .category {
+    width: 100%;
+  }
+}
+</style>
+
+{{#if categories}}
+<div class="grid-container ">
+  {{#each categories as |c|}}
+  <div class="category" style={{border-color c.color}}>{{category-title-link category=c}}</div>
+  {{/each}}
+</div>
 {{/if}}
